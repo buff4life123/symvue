@@ -1,6 +1,6 @@
 <template>
     <v-img
-        src="/*https://demos.creative-tim.com/vuetify-material-dashboard-pro/img/login.d6d3bb09.jpg*/"
+        src="https://demos.creative-tim.com/vuetify-material-dashboard-pro/img/login.d6d3bb09.jpg"
         width="100%"
         height="100%"
     >
@@ -28,64 +28,24 @@
                     <v-card-text class="text-center">
 
                         <div class="text-center grey--text body-1 font-weight-light">Or Be Classical</div>
-                        <!-- <v-text-field
+                        <v-text-field
                             class="mt-10"
                             label="First Name..."
                             prepend-icon="mdi-face"
-                        ></v-text-field> -->
-                        <!-- <v-text-field
+                        ></v-text-field>
+                        <v-text-field
                             label="Email..."
                             prepend-icon="mdi-email"
-                        ></v-text-field> -->
-                        <!-- <v-text-field
+                        ></v-text-field>
+                        <v-text-field
                             class="mb-8"
                             label="Password..."
                             prepend-icon="mdi-lock-outline"
-                        ></v-text-field> -->
+                        ></v-text-field>
                         <!-- <v-checkbox
                           label="Remember me"
                         ></v-checkbox> -->
-                        <!-- <v-btn rounded text large color="green">Let's Go</v-btn> -->
-                        <dw-autocomplete
-                            :label="togle_label ? label1 : label2"
-                            v-model="telephone"
-                            outlined
-                        >
-                            <template v-slot:label>
-                                <div>
-                                    {{togle_label ? label1 : ''}}{{togle_label ? label1 : label2}}
-                                </div>
-                            </template>
-                            <!-- <template v-slot:item="data">
-                                <template v-if="typeof data.item !== 'object'">
-                                    <v-list-item-content v-text="data.item"></v-list-item-content>
-                                </template>
-                                <template v-else>
-                                    <v-list-item-content style="flex: unset; width: 32px; margin-right: 6px;">
-                                        <img class=".dw_combobox_img" height="24" width="32" :src="data.item.img+'.png'"/>
-                                    </v-list-item-content>
-                                    <v-list-item-content>
-                                        <v-list-item-title v-html="data.item.name"></v-list-item-title>
-                                        <v-list-item-subtitle v-html="data.item.group"></v-list-item-subtitle>
-                                    </v-list-item-content>
-                                </template>
-                            </template> -->
-                        </dw-autocomplete>
-
-                        <!-- <v-combobox
-                            label="Password..."
-                            v-model="telephone2"
-                            outlined
-                        ></v-combobox> -->
-
-                        <!-- <v-autocomplete
-                            label="Components"
-                            :items="components"
-                        ></v-autocomplete> -->
-
-                        <v-switch color="amber"
-                            v-model="togle_label"
-                        ></v-switch>
+                        <v-btn rounded text large color="green">Let's Go</v-btn>
                     </v-card-text>
                 </material-card>
             </v-row>
