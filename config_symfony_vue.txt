@@ -1,0 +1,11 @@
+npm install
+npm i vuetify-material-dashboard
+
+
+npm init
+npm install --save vue vue-router
+npm install --save-dev webpack webpack-cli
+
+
+npm run w - watch (build changes)
+npm run b - build project

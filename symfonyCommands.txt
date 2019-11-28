@@ -1,0 +1,68 @@
+Composer:
+
+php composer.phar update 	- This will resolve all dependencies of the project and write the exact versions into composer.lock.
+php composer.phar require 	- The require command adds new packages to the composer.json file from the current directory. If no file exists one will be created on the fly.
+php composer.phar validate 	- You should always run the validate command before you commit your composer.json file, and before you tag a release. It will check if your composer.json is valid.
+
+
+web server:
+
+php bin/console server:run 10.0.9.23:2323 	- This starts the web server at localhost:8000 in the background that serves your Symfony application.
+composer require server --dev  -install development package
+
+doctrine:
+
+php bin/console doctrine:database:create 		- create the database 
+php bin/console make:entity 					- create a class that is saved to the database 
+
+php bin/console make:migration         	    	- generate a migration
+php bin/console doctrine:migrations:diff        - generate a migration by comparing your current database to your mapping information. (substitui php bin/console make:migration  )
+php bin/console doctrine:schema:validate        - validar o schema e comparar com o schema da base dados
+php bin/console doctrine:migrations:migrate 	- execute the migrations
+
+
+
+GIT Backtrack:
+
+git checkout HEAD filename 	- Discards changes in the working directory.
+git reset HEAD filename  	- Unstages file changes in the staging area.
+git reset commit_SHA		- Resets to a previous commit in your commit history.
+
+git BRANCH:
+
+git branch					- Lists all a Git project’s branches.
+git branch branch_name 		- Creates a new branch.
+git checkout branch_name 	- Used to switch from one branch to another.
+git merge branch_name 		- Used to join file changes from one branch to another.
+git branch -d branch_name	- Deletes the branch specified.
+
+GIT TEAMWORK:
+
+git clone							- Creates a local copy of a remote.
+git remote -v						- Lists a Git project’s remotes.
+git fetch							- Fetches work from the remote into the local copy.
+git merge origin/master				- Merges origin/master into your local branch.
+git push origin <branch_name>		- Pushes a local branch to the origin remote.
+
+git reset --hard
+
+
+$second_player_rank =& $first_player_rank; // create an alias (apontar para o mesmo lugar)
+$second_player_rank = $first_player_rank; // create a copy
+CMD:
+
+grep -Rl "palavra"  - search for word "palavra".
+
+vsCode:
+
+ctrl + P        - find file
+ctrl + alt + F  - format code
+alt f12         - quick edit
+
+git ftp catchup
+git ftp push
+
+
+php bin/console app:remove-folder
+
+php bin/console make:entity --regenerate - Auto generate setters ang getters
