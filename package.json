@@ -37,7 +37,7 @@
     "countries-and-timezones": "^2.0.3",
     "croppie": "^2.6.4",
     "flag-icon-css": "^3.4.5",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "libphonenumber-js": "^1.7.26",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.27",
