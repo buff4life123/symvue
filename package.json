@@ -62,7 +62,7 @@
     "deepmerge": "^4.2.2",
     "fibers": "^4.0.2",
     "file-loader": "^4.2.0",
-    "i": "^0.3.6",
+    "i": "^0.3.7",
     "lodash.clonedeep": "^4.5.0",
     "node-sass": "^4.13.0",
     "sass": "^1.23.3",
